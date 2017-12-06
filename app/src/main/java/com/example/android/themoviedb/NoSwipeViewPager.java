@@ -30,10 +30,10 @@ public class NoSwipeViewPager extends ViewPager {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        // Never allow swiping to switch between pages
+
         return false;
     }
-    //down one is added for smooth scrolling
+
     private void setMyScroller() {
         try {
             Class<?> viewpager = ViewPager.class;

@@ -151,9 +151,6 @@ public class SearchMovie extends Fragment {
                     movie.setReleaseDate(jsonObjectList.getString("release_date"));
                     movie.setBackdropPath(jsonObjectList.getString("backdrop_path"));
 
-                    /*
-                     * Fetch Genre ID in Movie list with Genre list
-                     */
                     movieGenreList = new ArrayList<>();
                     movieGenreNames = new ArrayList<>();
                     JSONArray jsonArrayGenre = jsonObjectList.getJSONArray("genre_ids");

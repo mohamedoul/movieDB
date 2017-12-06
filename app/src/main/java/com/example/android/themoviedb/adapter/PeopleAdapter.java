@@ -47,10 +47,7 @@ public class PeopleAdapter extends RecyclerView.Adapter<PeopleAdapter.ViewHolder
         }
         else
             view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card_people_big, viewGroup, false);
-//        else {
-//            View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.activity_row_big, viewGroup, false);
-//            return new PersonViewHolder(v);
-//        }
+
         ViewHolder viewHolder = new ViewHolder(view);
         return viewHolder;
     }

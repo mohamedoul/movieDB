@@ -193,9 +193,7 @@ public class PeopleActivity extends AppCompatActivity {
                 Picasso.with(context).load("https://image.tmdb.org/t/p/h632" + jsonObject.getString("profile_path"))
                         .into(ivProfilePhoto);
 
-                /*
-                 * Fetch Movies
-                 */
+
                 JSONObject jsonObjectCredits = jsonObject.getJSONObject("credits");
                 JSONArray jsonArrayCast = jsonObjectCredits.getJSONArray("cast");
 

@@ -75,8 +75,7 @@ public class EpisodesActivity extends AppCompatActivity {
         assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
+
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
@@ -95,7 +94,7 @@ public class EpisodesActivity extends AppCompatActivity {
             finish();
             return true;
         }
-        // other menu select events may be present here
+
 
         return super.onOptionsItemSelected(item);
     }
