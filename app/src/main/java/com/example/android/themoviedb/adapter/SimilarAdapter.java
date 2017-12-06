@@ -62,6 +62,7 @@ public class SimilarAdapter extends RecyclerView.Adapter<SimilarAdapter.ViewHold
                 intent.putExtra("id", movie.getId());
                 intent.putExtra("genre", (Serializable) genres);
                 context.startActivity(intent);
+
             }
         });
 
