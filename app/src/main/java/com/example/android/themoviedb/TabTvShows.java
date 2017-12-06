@@ -2,7 +2,6 @@ package com.example.android.themoviedb;
 
 import android.os.AsyncTask;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,7 +13,6 @@ import android.widget.ProgressBar;
 
 import com.example.android.themoviedb.adapter.TvAiringAdapter;
 import com.example.android.themoviedb.adapter.TvPopularAdapter;
-import com.example.android.themoviedb.adapter.services.showService;
 import com.example.android.themoviedb.model.GenreModel;
 import com.example.android.themoviedb.model.TvModel;
 
@@ -30,11 +28,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
-import retrofit.Callback;
-import retrofit.RestAdapter;
-import retrofit.RetrofitError;
-import retrofit.client.Response;
 
 
 public class TabTvShows extends Fragment {
