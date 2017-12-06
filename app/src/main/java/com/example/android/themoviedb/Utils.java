@@ -98,6 +98,7 @@ public class Utils {
         else{
             setLanguage("&language=fr-FR");
         }
+
          return language;
     }
     public static void setAppLanguage(Context context, int Value){
