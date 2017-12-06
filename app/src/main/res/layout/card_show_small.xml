@@ -73,40 +73,7 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:background="@color/colorAccent"/>
 
-            <!--<TextView-->
-            <!--android:id="@+id/tv_from"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="from"-->
-            <!--android:textSize="12sp"-->
-            <!--android:paddingRight="4dp"-->
-            <!--android:layout_alignBaseline="@+id/tv_vote"-->
-            <!--android:layout_alignBottom="@+id/tv_vote"-->
-            <!--android:layout_toEndOf="@+id/tv_vote"-->
-            <!--android:textColor="#fefefe"/>-->
 
-            <!--<TextView-->
-            <!--android:id="@+id/tv_vote_count"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="1234"-->
-            <!--android:textSize="12sp"-->
-            <!--android:paddingRight="3dp"-->
-            <!--android:layout_alignBaseline="@+id/tv_from"-->
-            <!--android:layout_alignBottom="@+id/tv_from"-->
-            <!--android:layout_toEndOf="@+id/tv_from"-->
-            <!--android:textColor="#fefefe"/>-->
-
-            <!--<TextView-->
-            <!--android:id="@+id/tv_users"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:text="users"-->
-            <!--android:textSize="12sp"-->
-            <!--android:layout_alignBaseline="@+id/tv_vote_count"-->
-            <!--android:layout_alignBottom="@+id/tv_vote_count"-->
-            <!--android:layout_toEndOf="@+id/tv_vote_count"-->
-            <!--android:textColor="#fefefe"/>-->
 
         </RelativeLayout>
 
