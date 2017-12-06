@@ -51,7 +51,7 @@ public class SearchPeople extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_search, container, false);
         rootView.setTag(TAG);
 
-//        Log.e("Query People", query);
+
         RecyclerView rvSearchPeople = (RecyclerView) rootView.findViewById(R.id.rv_search);
         progressBarPeople = (ProgressBar) rootView.findViewById(R.id.progress_bar);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
@@ -61,7 +61,7 @@ public class SearchPeople extends Fragment {
         rvSearchPeople.setNestedScrollingEnabled(false);
 
         tvNoResults = (TextView) rootView.findViewById(R.id.tv_no_results);
-//        tvNoResults.setVisibility(View.INVISIBLE);
+
 
         new FetchSearchPeopleData().execute();
 
@@ -142,9 +142,7 @@ public class SearchPeople extends Fragment {
                     people.setName(jsonObjectList.getString("name"));
                     people.setPopularity(jsonObjectList.getDouble("popularity"));
                     people.setProfilePath(jsonObjectList.getString("profile_path"));
-//                    if (!peopleList.isEmpty()){
-//                        peopleList.clear();
-//                    }
+
                     peopleList.clear();
                     peopleList.add(people);
                 }

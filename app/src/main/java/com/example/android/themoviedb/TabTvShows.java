@@ -136,17 +136,13 @@ public class TabTvShows extends Fragment {
 
                     tv.setId(jsonObjectList.getInt("id"));
                     tv.setName(jsonObjectList.getString("name"));
-//                    tv.setOverview(jsonObjectList.getString("overview"));
-                    tv.setPosterPath(jsonObjectList.getString("poster_path"));
-//                    tv.setBackdropPath(jsonObjectList.getString("backdrop_path"));
-//                    tv.setFirstAirDate(jsonObjectList.getString("first_air_date"));
-                    tv.setVote(jsonObjectList.getDouble("vote_average"));
-//                    tv.setVote_count(jsonObjectList.getDouble("vote_count"));
-//                    tv.setPopularity(jsonObjectList.getDouble("popularity"));
 
-                    /*
-                     * Fetch Genre ID in Movie list with Genre list
-                     */
+                    tv.setPosterPath(jsonObjectList.getString("poster_path"));
+
+
+                    tv.setVote(jsonObjectList.getDouble("vote_average"));
+
+
                     movieGenreList = new ArrayList<>();
                     movieGenreNames = new ArrayList<>();
                     JSONArray jsonArrayGenre = jsonObjectList.getJSONArray("genre_ids");
@@ -234,34 +230,12 @@ public class TabTvShows extends Fragment {
 
                     tv.setId(jsonObjectList.getInt("id"));
                     tv.setName(jsonObjectList.getString("name"));
-//                    tv.setOverview(jsonObjectList.getString("overview"));
+
                     tv.setPosterPath(jsonObjectList.getString("poster_path"));
-//                    tv.setBackdropPath(jsonObjectList.getString("backdrop_path"));
-//                    tv.setFirstAirDate(jsonObjectList.getString("first_air_date"));
-//                    tv.setVote(jsonObjectList.getDouble("vote_average"));
-//                    tv.setVote_count(jsonObjectList.getDouble("vote_count"));
-//                    tv.setPopularity(jsonObjectList.getDouble("popularity"));
 
-                    /*
-                     * Fetch Genre ID in Movie list with Genre list
-                     */
-//                    movieGenreList = new ArrayList<>();
-//                    movieGenreNames = new ArrayList<>();
-//                    JSONArray jsonArrayGenre = jsonObjectList.getJSONArray("genre_ids");
-//                    for (int j = 0; j < jsonArrayGenre.length(); j++) {
-//                        Integer genre_id = jsonArrayGenre.getInt(j);
-//                        movieGenreList.add(genre_id);
-//                    }
-//
-//                    for (Integer genreid : movieGenreList) {
-//                        for (GenreModel list : genreList) {
-//                            if (list.getId() == genreid) {
-//                                movieGenreNames.add(list.getGenreName());
-//                            }
-//                        }
-//                    }
 
-//                    tv.setGenre_ids(movieGenreNames);
+
+
                     tvPopularList.add(tv);
                 }
                 tvPopularAdapter.notifyDataSetChanged();

@@ -360,9 +360,7 @@ public class Tab1NowPlaying extends Fragment{
                     movie.setReleaseDate(jsonObjectSoon.getString("release_date"));
                     movie.setBackdropPath(jsonObjectSoon.getString("backdrop_path"));
 
-                    /*
-                     * Fetch Genre ID in Movie list with Genre list
-                     */
+
                     JSONArray jsonArrayGenre = jsonObjectSoon.getJSONArray("genre_ids");
                     for (int j = 0; j < jsonArrayGenre.length(); j++) {
                         Integer genre_id = jsonArrayGenre.getInt(j);

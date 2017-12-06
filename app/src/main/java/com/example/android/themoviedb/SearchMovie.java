@@ -63,7 +63,7 @@ public class SearchMovie extends Fragment {
         rvSearchMovie.setNestedScrollingEnabled(false);
 
         tvNoResults = (TextView) rootView.findViewById(R.id.tv_no_results);
-//        tvNoResults.setVisibility(View.GONE);
+
 
         new FetchGenreData().execute();
         new FetchSearchMovieData().execute();
@@ -172,9 +172,7 @@ public class SearchMovie extends Fragment {
 
                     movie.setGenreList(movieGenreNames);
 
-//                    if (!movieList.isEmpty()){
-//                        movieList.clear();
-//                    }
+
                     movieList.add(movie);
                 }
                 searchMovieAdapter.notifyDataSetChanged();

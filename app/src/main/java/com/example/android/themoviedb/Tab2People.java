@@ -49,15 +49,7 @@ public class Tab2People extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab2_people, container, false);
-//        FloatingActionButton fab = (FloatingActionButton) rootView.findViewById(R.id.floating_action_button);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                smallRecycleView.setSelected(false);
-//                gridRecycleView.setSelected(false);
-//                viewFlipper.showNext();
-//            }
-//        });
+
         ((MainActivity) getActivity()).setFlipButtonListener(new FlipButtonListener() {
             @Override
             public void flip() {
@@ -135,96 +127,6 @@ public class Tab2People extends Fragment {
     }
 
 
-    // Todo : Using An Asynk Task instead of Retrofit:
 
-
-//    private void fetchJSONPopular (String response) {
-//        try{
-//            JSONObject jsonObject = new JSONObject(response);
-//            JSONArray jsonArray = jsonObject.getJSONArray("results");
-//
-//            for (int i = 0; i < 20; i++) {
-//                JSONObject jsonObjectList = jsonArray.getJSONObject(i);
-//                PeopleModel people = new PeopleModel();
-////                    people.setId(jsonObjectList.getInt("id"));
-////                    people.setName(jsonObjectList.getString("name"));
-////                    people.setPopularity(jsonObjectList.getDouble("popularity"));
-////                    people.setProfilePath(jsonObjectList.getString("profile_path"))
-//                Gson gson = new Gson();
-//                people = gson.fromJson(jsonObjectList.toString(),PeopleModel.class);
-//                peopleList.add(people);
-//            }
-//            peopleAdapterBig.notifyDataSetChanged();
-//        } catch (JSONException e) {
-//            Log.e("Error JSON", e.toString());
-//        }
-//    }
-//    public class FetchMostPopular extends AsyncTask<Void, Void, String> {
-//
-//        @Override
-//        protected String doInBackground(Void... voids) {
-//            HttpURLConnection httpURLConnection = null;
-//            BufferedReader bufferedReader = null;
-//            String strJSONMovie = "";
-//
-//            try {
-//                String strUrl = "https://api.themoviedb.org/3/person/popular" +
-//                        "?api_key=d1ed76b7307ba5cec012b3685dc37dd3";
-//                URL url = new URL(strUrl);
-//                httpURLConnection = (HttpURLConnection) url.openConnection();
-//                httpURLConnection.setRequestMethod("GET");
-//                httpURLConnection.connect();
-//                InputStream inputStream = httpURLConnection.getInputStream();
-//                StringBuffer stringBuffer = new StringBuffer();
-//                if (inputStream == null) {
-//                    return null;
-//                } else {
-//                    bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-//                }
-//                String line = "";
-//                while ((line = bufferedReader.readLine()) != null) {
-//                    stringBuffer.append(line);
-//                }
-//                if (stringBuffer.length() == 0) {
-//                    return null;
-//                } else {
-//                    strJSONMovie = stringBuffer.toString();
-//                    return strJSONMovie;
-//                }
-//
-//            } catch (IOException e) {
-//                Log.e("Parse Error", e.toString());
-//                return null;
-//            }
-//        }
-//
-//        @Override
-//        protected void onPostExecute(String s) {
-//            super.onPostExecute(s);
-//            fetchJSONPopular(s);
-//        }
-//
-//        private void fetchJSONPopular (String response) {
-//            try{
-//                JSONObject jsonObject = new JSONObject(response);
-//                JSONArray jsonArray = jsonObject.getJSONArray("results");
-//
-//                for (int i = 0; i < 20; i++) {
-//                    JSONObject jsonObjectList = jsonArray.getJSONObject(i);
-//                    PeopleModel people = new PeopleModel();
-////                    people.setId(jsonObjectList.getInt("id"));
-////                    people.setName(jsonObjectList.getString("name"));
-////                    people.setPopularity(jsonObjectList.getDouble("popularity"));
-////                    people.setProfilePath(jsonObjectList.getString("profile_path"))
-//                    Gson gson = new Gson();
-//                    people = gson.fromJson(jsonObjectList.toString(),PeopleModel.class);
-//                    peopleList.add(people);
-//                }
-//                peopleAdapterBig.notifyDataSetChanged();
-//            } catch (JSONException e) {
-//                Log.e("Error JSON", e.toString());
-//            }
-//        }
-//    }
 }
 

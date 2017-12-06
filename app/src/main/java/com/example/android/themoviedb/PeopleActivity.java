@@ -145,14 +145,9 @@ public class PeopleActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = new JSONObject(response);
 
-//                people.setId(jsonObject.getInt("id"));
-//                people.setName(jsonObject.getString("name"));
+
                 people.setBiography(jsonObject.getString("biography"));
-//                people.setBirthplace(jsonObject.getString("place_of_birth"));
-//                people.setBirthday(jsonObject.getString("birthday"));
-//                people.setDeathday(jsonObject.getString("deathday"));
-//                people.setProfilePath(jsonObject.getString("profile_path"));
-//                people.setPopularity(jsonObject.getDouble("popularity"));
+
                 String littleBio = jsonObject.getString("biography");
                 bio = littleBio.substring(0, Math.min(littleBio.length(), 250)) + "...";
 
@@ -231,7 +226,7 @@ public class PeopleActivity extends AppCompatActivity {
 
     public boolean expandView(View v) {
         tvBio = (TextView) v.findViewById(R.id.tv_biography);
-//        tvBio.setText(people.getBiography());
+
         if (!clicked) {
             tvBio.setText(people.getBiography());
             clicked = true;

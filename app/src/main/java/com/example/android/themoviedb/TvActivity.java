@@ -88,7 +88,7 @@ public class TvActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tv);
-//
+
         intent = getIntent();
 
         ivBackdrop = (ImageView) findViewById(R.id.iv_backdrop);

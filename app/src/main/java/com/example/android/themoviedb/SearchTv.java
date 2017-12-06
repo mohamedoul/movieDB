@@ -150,9 +150,7 @@ public class SearchTv extends Fragment {
                     movie.setPosterPath(jsonObjectList.getString("poster_path"));
                     movie.setBackdropPath(jsonObjectList.getString("backdrop_path"));
 
-                    /*
-                     * Fetch Genre ID in Movie list with Genre list
-                     */
+
                     movieGenreList = new ArrayList<>();
                     movieGenreNames = new ArrayList<>();
                     JSONArray jsonArrayGenre = jsonObjectList.getJSONArray("genre_ids");

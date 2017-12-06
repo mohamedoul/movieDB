@@ -324,9 +324,7 @@ public class MovieActivity extends AppCompatActivity {
                     imagesList.add(jsonObjectImage.getString("file_path"));
                 }
                 imagesAdapter.notifyDataSetChanged();
-                /*
-                 * Videos
-                 */
+
                 JSONObject jsonObjectVideos = jsonObject.getJSONObject("videos");
                 JSONArray jsonArrayVideos = jsonObjectVideos.getJSONArray("results");
                 for (int v = 0; v < jsonArrayVideos.length(); v++) {
@@ -339,7 +337,7 @@ public class MovieActivity extends AppCompatActivity {
                     video.setType(jsonObjectResults.getString("type"));
                     video.setSize(jsonObjectResults.getInt("size"));
 
-//                    if (video.getType().equals("Trailer"))
+
                     videoList.add(video);
                 }
                 videosAdapter.notifyDataSetChanged();
