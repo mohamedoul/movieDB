@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">PopCorn</string>
+    <string name="action_settings">Reglages</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_people">PeopleActivity</string>
+    <string name="api_key">d1ed76b7307ba5cec012b3685dc37dd3</string>
+    <string name="navigation_drawer_open">Ouvrir le navigation drawer</string>
+    <string name="navigation_drawer_close">Fermer le navigation drawer</string>
+    <string name="title_activity_movie">MovieActivity</string>
+    <string name="title_activity_tv">TvActivity</string>
+    <string name="title_activity_seasons">SeasonsActivity</string>
+    <string name="title_activity_episodes">idk</string>
+    <string name="title_activity_search">idk2</string>
+    <string name="preference_file_key">com.example.themoviedb.favorites</string>
+    <string name="movie_added">film ajouté au favoris!</string>
+    <string name="movie_removed">film retirer de favoris!</string>
+    <string name="show_added">serie ajouté au favoris!</string>
+    <string name="show_removed">serie retirer de favoris!</string>
+    <string name="person_added">personne ajouté au favoris!</string>
+    <string name="person_removed">personne retirer de favoris!</string>
+    <string name="home">Acceuil</string>
+    <string name="favorits">Favorits</string>
+    <string name="options">Options</string>
+    <string name="from">de</string>
+    <string name="users">utilisateurs</string>
+    <string name="cast">acteurs</string>
+    <string name="details">Detailles</string>
+    <string name="director">Directeur:</string>
+    <string name="Similar_Movies">Films Similaires</string>
+    <string name="place_of_birth">Lieu de naissance:</string>
+    <string name="died">Mort:</string>
+    <string name="movies">Films</string>
+    <string name="most_popular">Le Plus Populaire</string>
+    <string name="also_known_as">Also Known As:</string>
+    <string name="born">né:</string>
+    <string name="eng_fr"><![CDATA[ENG<=>FR]]></string>
+    <string name="shows">Séries</string>
+    <string name="people">Peronnalités</string>
+    <string name="airing_today">Aujourd\'hui</string>
+</resources>

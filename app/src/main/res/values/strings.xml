@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_people">PeopleActivity</string>
+    <string name="api_key">d1ed76b7307ba5cec012b3685dc37dd3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_movie">MovieActivity</string>
+    <string name="title_activity_tv">TvActivity</string>
+    <string name="title_activity_seasons">SeasonsActivity</string>
+    <string name="title_activity_episodes">idk</string>
+    <string name="title_activity_search">idk2</string>
+    <string name="preference_file_key">com.example.themoviedb.favorites</string>
+    <string name="preference_file_key2">com.example.themoviedb.language</string>
+    <string name="movie_added">movie added to your favorites!</string>
+    <string name="movie_removed">movie removed from your favorites</string>
+    <string name="show_added">movie added to your favorites!</string>
+    <string name="show_removed">movie removed from your favorites</string>
+    <string name="person_added">movie added to your favorites!</string>
+    <string name="person_removed">movie removed from your favorites</string>
+    <string name="home">Home</string>
+    <string name="favorits">Favorits</string>
+    <string name="options">Options</string>
+    <string name="users">users</string>
+    <string name="cast">Cast</string>
+    <string name="details">Details</string>
+    <string name="director">Director:</string>
+    <string name="Similar_Movies">Similar Movies</string>
+    <string name="also_known_as">Also Known As:</string>
+    <string name="born">Born:</string>
+    <string name="place_of_birth">Place of Birth:</string>
+    <string name="died">Died:</string>
+    <string name="movies">Movies</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="from">from</string>
+    <string name="eng_fr"><![CDATA[ENG<=>FR]]></string>
+    <string name="shows">TV SHOWS</string>
+    <string name="people">PEOPLE</string>
+    <string name="airing_today">Airing Today</string>
+</resources>
