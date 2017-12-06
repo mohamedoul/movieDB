@@ -49,19 +49,10 @@ import java.util.List;
 
 public class EpisodesActivity extends AppCompatActivity {
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link FragmentPagerAdapter} derivative, which will keep every
-     * loaded fragment in memory. If this becomes too memory intensive, it
-     * may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
+
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
+
     private ViewPager mViewPager;
     private Intent intent;
     private int count;
@@ -119,14 +110,9 @@ public class EpisodesActivity extends AppCompatActivity {
 
 
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
+
     public static class PlaceholderFragment extends Fragment {
-        /**
-         * The fragment argument representing the section number for this
-         * fragment.
-         */
+
         private static final String ARG_SECTION_NUMBER = "section_number";
         private String id;
         private List<EpisodeModel> episodesList = new ArrayList<>();
@@ -136,10 +122,7 @@ public class EpisodesActivity extends AppCompatActivity {
             this.id = id;
         }
 
-        /**
-         * Returns a new instance of this fragment for the given section
-         * number.
-         */
+
         public PlaceholderFragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment(id);
             Bundle args = new Bundle();
@@ -244,10 +227,7 @@ public class EpisodesActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
+
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
@@ -264,7 +244,7 @@ public class EpisodesActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            // Show n total pages.
+
             return count;
         }
 

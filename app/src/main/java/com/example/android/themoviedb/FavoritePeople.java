@@ -124,7 +124,7 @@ public class FavoritePeople extends Fragment {
 
 
 
-    // Todo : Using An Asynk Task instead of Retrofit:
+
 
 
     public class FetchMostPopular extends AsyncTask<String, Void, String> {
